@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AFNetworkingVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prS-Ju-m0b">
+                    <rect key="frame" x="20" y="84" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="gU1-Un-7sW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="GET">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="get:" destination="-1" eventType="touchUpInside" id="CeS-g4-kHm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoh-5W-Cgb">
+                    <rect key="frame" x="20" y="144" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Eld-4E-oR4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="POST">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="post:" destination="-1" eventType="touchUpInside" id="Vhd-Ek-BXR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPY-eH-nZX">
+                    <rect key="frame" x="20" y="204" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="itR-l9-4ml"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="download start">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadStart:" destination="-1" eventType="touchUpInside" id="Gan-B0-lBy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-f5-nkH">
+                    <rect key="frame" x="20" y="264" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ccC-Ar-XEG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="download cancel">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadCancel:" destination="-1" eventType="touchUpInside" id="nk1-PC-N9S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-ap-v6L">
+                    <rect key="frame" x="20" y="324" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="D8I-Fa-27U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="upload start">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadStart:" destination="-1" eventType="touchUpInside" id="6WN-Ew-x0P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESP-IM-giZ">
+                    <rect key="frame" x="20" y="384" width="374" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BgO-c9-8nk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="upload cancel">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadCancel:" destination="-1" eventType="touchUpInside" id="JFl-3E-g7O"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aoh-5W-Cgb" firstAttribute="top" secondItem="prS-Ju-m0b" secondAttribute="bottom" constant="10" id="3Ce-qz-6kg"/>
+                <constraint firstAttribute="trailing" secondItem="aoh-5W-Cgb" secondAttribute="trailing" constant="20" id="E5N-yz-D5e"/>
+                <constraint firstItem="rVZ-ap-v6L" firstAttribute="top" secondItem="Ips-f5-nkH" secondAttribute="bottom" constant="10" id="HaA-Kn-i2D"/>
+                <constraint firstItem="prS-Ju-m0b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JW9-4C-c3r"/>
+                <constraint firstItem="rVZ-ap-v6L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="KgU-ga-epQ"/>
+                <constraint firstAttribute="trailing" secondItem="prS-Ju-m0b" secondAttribute="trailing" constant="20" id="N9t-fn-CO9"/>
+                <constraint firstItem="Ips-f5-nkH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="PQD-08-mOD"/>
+                <constraint firstItem="KPY-eH-nZX" firstAttribute="top" secondItem="aoh-5W-Cgb" secondAttribute="bottom" constant="10" id="ZF8-Uz-hiW"/>
+                <constraint firstItem="ESP-IM-giZ" firstAttribute="top" secondItem="rVZ-ap-v6L" secondAttribute="bottom" constant="10" id="ZKo-2l-CwK"/>
+                <constraint firstItem="Ips-f5-nkH" firstAttribute="top" secondItem="KPY-eH-nZX" secondAttribute="bottom" constant="10" id="bIJ-qd-894"/>
+                <constraint firstItem="ESP-IM-giZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="k7s-ru-j1b"/>
+                <constraint firstItem="KPY-eH-nZX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="pII-G7-dFk"/>
+                <constraint firstAttribute="trailing" secondItem="KPY-eH-nZX" secondAttribute="trailing" constant="20" id="pWj-6J-TNw"/>
+                <constraint firstAttribute="trailing" secondItem="Ips-f5-nkH" secondAttribute="trailing" constant="20" id="rpD-jf-r87"/>
+                <constraint firstAttribute="trailing" secondItem="ESP-IM-giZ" secondAttribute="trailing" constant="20" id="sio-si-Itq"/>
+                <constraint firstItem="prS-Ju-m0b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="xGj-Mb-UTL"/>
+                <constraint firstAttribute="trailing" secondItem="rVZ-ap-v6L" secondAttribute="trailing" constant="20" id="yk9-hs-NOB"/>
+                <constraint firstItem="aoh-5W-Cgb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="zBl-yL-h9P"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="64"/>
+        </view>
+    </objects>
+</document>

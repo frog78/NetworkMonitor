@@ -1,0 +1,37 @@
+//
+//  NetworkMonitor.pch
+//  NetworkMonitor
+//
+//  Created by frog78 on 2018/4/24.
+//  Copyright © 2018年 frog78. All rights reserved.
+//
+
+#ifndef NetworkMonitor_pch
+#define NetworkMonitor_pch
+
+#import "NMHooker.h"
+#import "NMUtil.h"
+#import "NMManager.h"
+
+#define IS_NetworkMonitor_ON @"is_NetworkMonitor_on"
+
+
+#ifdef DEBUG
+
+#define EEXLog(fmt, ...) NSLog((@"*NetworkMonitor*:[Line %d] %s " fmt), __LINE__, __PRETTY_FUNCTION__, ##__VA_ARGS__);
+
+#else
+
+#define EEXLog(...)
+
+#endif
+
+
+#define EELog(fmt, ...) {\
+    if ([[NMManager sharedNMManager] getConfig].enableLog) { \
+        EEXLog(@"%@", [NSString stringWithFormat:fmt, ##__VA_ARGS__]); \
+    } \
+}
+
+
+#endif /* NetworkMonitor_pch */

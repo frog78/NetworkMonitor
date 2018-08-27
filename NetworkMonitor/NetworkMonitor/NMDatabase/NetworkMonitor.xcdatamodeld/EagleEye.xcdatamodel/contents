@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17F77" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="NMData" representedClassName="NMData" syncable="YES" codeGenerationType="class">
+        <attribute name="apn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cmd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cnnt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cty" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ddata" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dmd5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dnst" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dsize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ec" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eres" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="etp" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extension" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="ns" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="oip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="omd5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="osize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ourl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rcvt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rdsize" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reqs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rip" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rurl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sdt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sreq" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sslt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ti" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ttt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="wtt" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NMData" positionX="160" positionY="192" width="128" height="525"/>
+    </elements>
+</model>

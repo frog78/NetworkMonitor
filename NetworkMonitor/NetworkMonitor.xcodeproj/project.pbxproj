@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78E589792125188300C388BC /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E5896F2125188300C388BC /* NetworkMonitor.framework */; };
+		78E5897E2125188300C388BC /* NetworkMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E5897D2125188300C388BC /* NetworkMonitorTests.m */; };
+		78E589802125188300C388BC /* NetworkMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589722125188300C388BC /* NetworkMonitor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E589E521251ADF00C388BC /* NMProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589AB21251ADE00C388BC /* NMProxy.h */; };
+		78E589E621251ADF00C388BC /* NSURLConnection+NM.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589AC21251ADE00C388BC /* NSURLConnection+NM.m */; };
+		78E589E721251ADF00C388BC /* NMHooker.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589AD21251ADE00C388BC /* NMHooker.m */; };
+		78E589E821251ADF00C388BC /* NMObjectDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589AE21251ADE00C388BC /* NMObjectDelegate.m */; };
+		78E589E921251ADF00C388BC /* NSHTTPURLResponse+NM.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589AF21251ADE00C388BC /* NSHTTPURLResponse+NM.m */; };
+		78E589EA21251ADF00C388BC /* NSURLRequest+NM.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589B021251ADE00C388BC /* NSURLRequest+NM.m */; };
+		78E589EB21251ADF00C388BC /* NMURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B121251ADE00C388BC /* NMURLProtocol.h */; };
+		78E589EC21251ADF00C388BC /* NSURLSession+NM.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589B221251ADE00C388BC /* NSURLSession+NM.m */; };
+		78E589ED21251ADF00C388BC /* NSURLConnection+NM.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B321251ADE00C388BC /* NSURLConnection+NM.h */; };
+		78E589EE21251ADF00C388BC /* NMProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589B421251ADE00C388BC /* NMProxy.m */; };
+		78E589EF21251ADF00C388BC /* NMObjectDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B521251ADE00C388BC /* NMObjectDelegate.h */; };
+		78E589F021251ADF00C388BC /* NMHooker.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B621251ADE00C388BC /* NMHooker.h */; };
+		78E589F121251ADF00C388BC /* NMURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589B721251ADE00C388BC /* NMURLProtocol.m */; };
+		78E589F221251ADF00C388BC /* NSHTTPURLResponse+NM.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B821251ADE00C388BC /* NSHTTPURLResponse+NM.h */; };
+		78E589F321251ADF00C388BC /* NSURLRequest+NM.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589B921251ADE00C388BC /* NSURLRequest+NM.h */; };
+		78E589F421251ADF00C388BC /* NSURLSession+NM.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589BA21251ADE00C388BC /* NSURLSession+NM.h */; };
+		78E589F521251ADF00C388BC /* NSURL+NM.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589BC21251ADE00C388BC /* NSURL+NM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E589F621251ADF00C388BC /* NMConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589BD21251ADE00C388BC /* NMConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E589F721251ADF00C388BC /* NetworkMonitorDef.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589BE21251ADE00C388BC /* NetworkMonitorDef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E589F821251ADF00C388BC /* NMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589BF21251ADE00C388BC /* NMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78E589F921251ADF00C388BC /* NSURL+NM.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589C021251ADE00C388BC /* NSURL+NM.m */; };
+		78E589FA21251ADF00C388BC /* NMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589C121251ADE00C388BC /* NMManager.m */; };
+		78E589FB21251ADF00C388BC /* NMConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589C221251ADE00C388BC /* NMConfig.m */; };
+		78E589FC21251ADF00C388BC /* NetworkMonitor.pch in Headers */ = {isa = PBXBuildFile; fileRef = 78E589C321251ADE00C388BC /* NetworkMonitor.pch */; };
+		78E58A0021251ADF00C388BC /* NMDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589C821251ADE00C388BC /* NMDataModel.h */; };
+		78E58A0121251ADF00C388BC /* NMModelCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589C921251ADE00C388BC /* NMModelCommon.h */; };
+		78E58A0221251ADF00C388BC /* NMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589CA21251ADE00C388BC /* NMCache.m */; };
+		78E58A0521251ADF00C388BC /* NMDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589CD21251ADE00C388BC /* NMDataModel.m */; };
+		78E58A0921251ADF00C388BC /* NMCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589D121251ADE00C388BC /* NMCache.h */; };
+		78E58A0A21251ADF00C388BC /* NMModelCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589D221251ADE00C388BC /* NMModelCommon.m */; };
+		78E58A0B21251ADF00C388BC /* BaseDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589D521251ADE00C388BC /* BaseDAO.m */; };
+		78E58A0C21251ADF00C388BC /* NMDataDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589D621251ADE00C388BC /* NMDataDAO.m */; };
+		78E58A0D21251ADF00C388BC /* BaseDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589D721251ADE00C388BC /* BaseDAO.h */; };
+		78E58A0E21251ADF00C388BC /* NMDataDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589D821251ADE00C388BC /* NMDataDAO.h */; };
+		78E58A0F21251ADF00C388BC /* NetworkMonitor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78E589D921251ADE00C388BC /* NetworkMonitor.xcdatamodeld */; };
+		78E58A1221251ADF00C388BC /* NMData+CoreDataProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589DE21251ADE00C388BC /* NMData+CoreDataProperties.h */; };
+		78E58A1321251ADF00C388BC /* NMData+CoreDataClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589DF21251ADE00C388BC /* NMData+CoreDataClass.h */; };
+		78E58A1421251ADF00C388BC /* NMUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589E121251ADF00C388BC /* NMUtil.m */; };
+		78E58A1521251ADF00C388BC /* NSData+GZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589E221251ADF00C388BC /* NSData+GZIP.h */; };
+		78E58A1621251ADF00C388BC /* NMUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E589E321251ADF00C388BC /* NMUtil.h */; };
+		78E58A1721251ADF00C388BC /* NSData+GZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589E421251ADF00C388BC /* NSData+GZIP.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78E5897A2125188300C388BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78E589662125188300C388BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78E5896E2125188300C388BC;
+			remoteInfo = NetworkMonitor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78E5896F2125188300C388BC /* NetworkMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E589722125188300C388BC /* NetworkMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkMonitor.h; sourceTree = "<group>"; };
+		78E589732125188300C388BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E589782125188300C388BC /* NetworkMonitorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkMonitorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E5897D2125188300C388BC /* NetworkMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkMonitorTests.m; sourceTree = "<group>"; };
+		78E5897F2125188300C388BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78E589AB21251ADE00C388BC /* NMProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMProxy.h; sourceTree = "<group>"; };
+		78E589AC21251ADE00C388BC /* NSURLConnection+NM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLConnection+NM.m"; sourceTree = "<group>"; };
+		78E589AD21251ADE00C388BC /* NMHooker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMHooker.m; sourceTree = "<group>"; };
+		78E589AE21251ADE00C388BC /* NMObjectDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMObjectDelegate.m; sourceTree = "<group>"; };
+		78E589AF21251ADE00C388BC /* NSHTTPURLResponse+NM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSHTTPURLResponse+NM.m"; sourceTree = "<group>"; };
+		78E589B021251ADE00C388BC /* NSURLRequest+NM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLRequest+NM.m"; sourceTree = "<group>"; };
+		78E589B121251ADE00C388BC /* NMURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMURLProtocol.h; sourceTree = "<group>"; };
+		78E589B221251ADE00C388BC /* NSURLSession+NM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+NM.m"; sourceTree = "<group>"; };
+		78E589B321251ADE00C388BC /* NSURLConnection+NM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLConnection+NM.h"; sourceTree = "<group>"; };
+		78E589B421251ADE00C388BC /* NMProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMProxy.m; sourceTree = "<group>"; };
+		78E589B521251ADE00C388BC /* NMObjectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMObjectDelegate.h; sourceTree = "<group>"; };
+		78E589B621251ADE00C388BC /* NMHooker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMHooker.h; sourceTree = "<group>"; };
+		78E589B721251ADE00C388BC /* NMURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMURLProtocol.m; sourceTree = "<group>"; };
+		78E589B821251ADE00C388BC /* NSHTTPURLResponse+NM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSHTTPURLResponse+NM.h"; sourceTree = "<group>"; };
+		78E589B921251ADE00C388BC /* NSURLRequest+NM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLRequest+NM.h"; sourceTree = "<group>"; };
+		78E589BA21251ADE00C388BC /* NSURLSession+NM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+NM.h"; sourceTree = "<group>"; };
+		78E589BC21251ADE00C388BC /* NSURL+NM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+NM.h"; sourceTree = "<group>"; };
+		78E589BD21251ADE00C388BC /* NMConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMConfig.h; sourceTree = "<group>"; };
+		78E589BE21251ADE00C388BC /* NetworkMonitorDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMonitorDef.h; sourceTree = "<group>"; };
+		78E589BF21251ADE00C388BC /* NMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMManager.h; sourceTree = "<group>"; };
+		78E589C021251ADE00C388BC /* NSURL+NM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+NM.m"; sourceTree = "<group>"; };
+		78E589C121251ADE00C388BC /* NMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMManager.m; sourceTree = "<group>"; };
+		78E589C221251ADE00C388BC /* NMConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMConfig.m; sourceTree = "<group>"; };
+		78E589C321251ADE00C388BC /* NetworkMonitor.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMonitor.pch; sourceTree = "<group>"; };
+		78E589C821251ADE00C388BC /* NMDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMDataModel.h; sourceTree = "<group>"; };
+		78E589C921251ADE00C388BC /* NMModelCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMModelCommon.h; sourceTree = "<group>"; };
+		78E589CA21251ADE00C388BC /* NMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMCache.m; sourceTree = "<group>"; };
+		78E589CD21251ADE00C388BC /* NMDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMDataModel.m; sourceTree = "<group>"; };
+		78E589D121251ADE00C388BC /* NMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMCache.h; sourceTree = "<group>"; };
+		78E589D221251ADE00C388BC /* NMModelCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMModelCommon.m; sourceTree = "<group>"; };
+		78E589D521251ADE00C388BC /* BaseDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDAO.m; sourceTree = "<group>"; };
+		78E589D621251ADE00C388BC /* NMDataDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMDataDAO.m; sourceTree = "<group>"; };
+		78E589D721251ADE00C388BC /* BaseDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDAO.h; sourceTree = "<group>"; };
+		78E589D821251ADE00C388BC /* NMDataDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMDataDAO.h; sourceTree = "<group>"; };
+		78E589DA21251ADE00C388BC /* EagleEye.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EagleEye.xcdatamodel; sourceTree = "<group>"; };
+		78E589DC21251ADE00C388BC /* NMData+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NMData+CoreDataProperties.m"; sourceTree = "<group>"; };
+		78E589DD21251ADE00C388BC /* NMData+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NMData+CoreDataClass.m"; sourceTree = "<group>"; };
+		78E589DE21251ADE00C388BC /* NMData+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NMData+CoreDataProperties.h"; sourceTree = "<group>"; };
+		78E589DF21251ADE00C388BC /* NMData+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NMData+CoreDataClass.h"; sourceTree = "<group>"; };
+		78E589E121251ADF00C388BC /* NMUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NMUtil.m; sourceTree = "<group>"; };
+		78E589E221251ADF00C388BC /* NSData+GZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+GZIP.h"; sourceTree = "<group>"; };
+		78E589E321251ADF00C388BC /* NMUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NMUtil.h; sourceTree = "<group>"; };
+		78E589E421251ADF00C388BC /* NSData+GZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+GZIP.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78E5896B2125188300C388BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E589752125188300C388BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E589792125188300C388BC /* NetworkMonitor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78E589652125188300C388BC = {
+			isa = PBXGroup;
+			children = (
+				78E589712125188300C388BC /* NetworkMonitor */,
+				78E5897C2125188300C388BC /* NetworkMonitorTests */,
+				78E589702125188300C388BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78E589702125188300C388BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78E5896F2125188300C388BC /* NetworkMonitor.framework */,
+				78E589782125188300C388BC /* NetworkMonitorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78E589712125188300C388BC /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				78E589C321251ADE00C388BC /* NetworkMonitor.pch */,
+				78E589AA21251ADE00C388BC /* NMAOP */,
+				78E589C421251ADE00C388BC /* NMCache */,
+				78E589BB21251ADE00C388BC /* NMCore */,
+				78E589D321251ADE00C388BC /* NMDatabase */,
+				78E589E021251ADF00C388BC /* NMUtil */,
+				78E589722125188300C388BC /* NetworkMonitor.h */,
+				78E589732125188300C388BC /* Info.plist */,
+			);
+			path = NetworkMonitor;
+			sourceTree = "<group>";
+		};
+		78E5897C2125188300C388BC /* NetworkMonitorTests */ = {
+			isa = PBXGroup;
+			children = (
+				78E5897D2125188300C388BC /* NetworkMonitorTests.m */,
+				78E5897F2125188300C388BC /* Info.plist */,
+			);
+			path = NetworkMonitorTests;
+			sourceTree = "<group>";
+		};
+		78E589AA21251ADE00C388BC /* NMAOP */ = {
+			isa = PBXGroup;
+			children = (
+				78E589AB21251ADE00C388BC /* NMProxy.h */,
+				78E589B421251ADE00C388BC /* NMProxy.m */,
+				78E589B321251ADE00C388BC /* NSURLConnection+NM.h */,
+				78E589AC21251ADE00C388BC /* NSURLConnection+NM.m */,
+				78E589B621251ADE00C388BC /* NMHooker.h */,
+				78E589AD21251ADE00C388BC /* NMHooker.m */,
+				78E589B521251ADE00C388BC /* NMObjectDelegate.h */,
+				78E589AE21251ADE00C388BC /* NMObjectDelegate.m */,
+				78E589B821251ADE00C388BC /* NSHTTPURLResponse+NM.h */,
+				78E589AF21251ADE00C388BC /* NSHTTPURLResponse+NM.m */,
+				78E589B921251ADE00C388BC /* NSURLRequest+NM.h */,
+				78E589B021251ADE00C388BC /* NSURLRequest+NM.m */,
+				78E589B121251ADE00C388BC /* NMURLProtocol.h */,
+				78E589B721251ADE00C388BC /* NMURLProtocol.m */,
+				78E589BA21251ADE00C388BC /* NSURLSession+NM.h */,
+				78E589B221251ADE00C388BC /* NSURLSession+NM.m */,
+			);
+			path = NMAOP;
+			sourceTree = "<group>";
+		};
+		78E589BB21251ADE00C388BC /* NMCore */ = {
+			isa = PBXGroup;
+			children = (
+				78E589BC21251ADE00C388BC /* NSURL+NM.h */,
+				78E589C021251ADE00C388BC /* NSURL+NM.m */,
+				78E589BD21251ADE00C388BC /* NMConfig.h */,
+				78E589C221251ADE00C388BC /* NMConfig.m */,
+				78E589BE21251ADE00C388BC /* NetworkMonitorDef.h */,
+				78E589BF21251ADE00C388BC /* NMManager.h */,
+				78E589C121251ADE00C388BC /* NMManager.m */,
+			);
+			path = NMCore;
+			sourceTree = "<group>";
+		};
+		78E589C421251ADE00C388BC /* NMCache */ = {
+			isa = PBXGroup;
+			children = (
+				78E589C821251ADE00C388BC /* NMDataModel.h */,
+				78E589CD21251ADE00C388BC /* NMDataModel.m */,
+				78E589C921251ADE00C388BC /* NMModelCommon.h */,
+				78E589D221251ADE00C388BC /* NMModelCommon.m */,
+				78E589D121251ADE00C388BC /* NMCache.h */,
+				78E589CA21251ADE00C388BC /* NMCache.m */,
+			);
+			path = NMCache;
+			sourceTree = "<group>";
+		};
+		78E589D321251ADE00C388BC /* NMDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				78E589D421251ADE00C388BC /* DAO */,
+				78E589D921251ADE00C388BC /* NetworkMonitor.xcdatamodeld */,
+				78E589DB21251ADE00C388BC /* Model */,
+			);
+			path = NMDatabase;
+			sourceTree = "<group>";
+		};
+		78E589D421251ADE00C388BC /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				78E589D521251ADE00C388BC /* BaseDAO.m */,
+				78E589D621251ADE00C388BC /* NMDataDAO.m */,
+				78E589D721251ADE00C388BC /* BaseDAO.h */,
+				78E589D821251ADE00C388BC /* NMDataDAO.h */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		78E589DB21251ADE00C388BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				78E589DC21251ADE00C388BC /* NMData+CoreDataProperties.m */,
+				78E589DD21251ADE00C388BC /* NMData+CoreDataClass.m */,
+				78E589DE21251ADE00C388BC /* NMData+CoreDataProperties.h */,
+				78E589DF21251ADE00C388BC /* NMData+CoreDataClass.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		78E589E021251ADF00C388BC /* NMUtil */ = {
+			isa = PBXGroup;
+			children = (
+				78E589E321251ADF00C388BC /* NMUtil.h */,
+				78E589E121251ADF00C388BC /* NMUtil.m */,
+				78E589E221251ADF00C388BC /* NSData+GZIP.h */,
+				78E589E421251ADF00C388BC /* NSData+GZIP.m */,
+			);
+			path = NMUtil;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		78E5896C2125188300C388BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E589F821251ADF00C388BC /* NMManager.h in Headers */,
+				78E589F621251ADF00C388BC /* NMConfig.h in Headers */,
+				78E589F721251ADF00C388BC /* NetworkMonitorDef.h in Headers */,
+				78E589F521251ADF00C388BC /* NSURL+NM.h in Headers */,
+				78E589F021251ADF00C388BC /* NMHooker.h in Headers */,
+				78E589F321251ADF00C388BC /* NSURLRequest+NM.h in Headers */,
+				78E58A0E21251ADF00C388BC /* NMDataDAO.h in Headers */,
+				78E589EF21251ADF00C388BC /* NMObjectDelegate.h in Headers */,
+				78E589802125188300C388BC /* NetworkMonitor.h in Headers */,
+				78E58A1521251ADF00C388BC /* NSData+GZIP.h in Headers */,
+				78E589E521251ADF00C388BC /* NMProxy.h in Headers */,
+				78E58A1621251ADF00C388BC /* NMUtil.h in Headers */,
+				78E58A0021251ADF00C388BC /* NMDataModel.h in Headers */,
+				78E58A0D21251ADF00C388BC /* BaseDAO.h in Headers */,
+				78E58A1321251ADF00C388BC /* NMData+CoreDataClass.h in Headers */,
+				78E58A0121251ADF00C388BC /* NMModelCommon.h in Headers */,
+				78E58A1221251ADF00C388BC /* NMData+CoreDataProperties.h in Headers */,
+				78E589F421251ADF00C388BC /* NSURLSession+NM.h in Headers */,
+				78E589F221251ADF00C388BC /* NSHTTPURLResponse+NM.h in Headers */,
+				78E589EB21251ADF00C388BC /* NMURLProtocol.h in Headers */,
+				78E589FC21251ADF00C388BC /* NetworkMonitor.pch in Headers */,
+				78E58A0921251ADF00C388BC /* NMCache.h in Headers */,
+				78E589ED21251ADF00C388BC /* NSURLConnection+NM.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		78E5896E2125188300C388BC /* NetworkMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E589832125188300C388BC /* Build configuration list for PBXNativeTarget "NetworkMonitor" */;
+			buildPhases = (
+				78E5896A2125188300C388BC /* Sources */,
+				78E5896B2125188300C388BC /* Frameworks */,
+				78E5896C2125188300C388BC /* Headers */,
+				78E5896D2125188300C388BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NetworkMonitor;
+			productName = NetworkMonitor;
+			productReference = 78E5896F2125188300C388BC /* NetworkMonitor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		78E589772125188300C388BC /* NetworkMonitorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78E589862125188300C388BC /* Build configuration list for PBXNativeTarget "NetworkMonitorTests" */;
+			buildPhases = (
+				78E589742125188300C388BC /* Sources */,
+				78E589752125188300C388BC /* Frameworks */,
+				78E589762125188300C388BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78E5897B2125188300C388BC /* PBXTargetDependency */,
+			);
+			name = NetworkMonitorTests;
+			productName = NetworkMonitorTests;
+			productReference = 78E589782125188300C388BC /* NetworkMonitorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78E589662125188300C388BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = frog78;
+				TargetAttributes = {
+					78E5896E2125188300C388BC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					78E589772125188300C388BC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 78E589692125188300C388BC /* Build configuration list for PBXProject "NetworkMonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 78E589652125188300C388BC;
+			productRefGroup = 78E589702125188300C388BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78E5896E2125188300C388BC /* NetworkMonitor */,
+				78E589772125188300C388BC /* NetworkMonitorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78E5896D2125188300C388BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E589762125188300C388BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78E5896A2125188300C388BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E58A0B21251ADF00C388BC /* BaseDAO.m in Sources */,
+				78E58A1721251ADF00C388BC /* NSData+GZIP.m in Sources */,
+				78E58A0F21251ADF00C388BC /* NetworkMonitor.xcdatamodeld in Sources */,
+				78E589F921251ADF00C388BC /* NSURL+NM.m in Sources */,
+				78E589EE21251ADF00C388BC /* NMProxy.m in Sources */,
+				78E589F121251ADF00C388BC /* NMURLProtocol.m in Sources */,
+				78E589E821251ADF00C388BC /* NMObjectDelegate.m in Sources */,
+				78E58A0C21251ADF00C388BC /* NMDataDAO.m in Sources */,
+				78E589E921251ADF00C388BC /* NSHTTPURLResponse+NM.m in Sources */,
+				78E58A1421251ADF00C388BC /* NMUtil.m in Sources */,
+				78E589E621251ADF00C388BC /* NSURLConnection+NM.m in Sources */,
+				78E58A0221251ADF00C388BC /* NMCache.m in Sources */,
+				78E58A0A21251ADF00C388BC /* NMModelCommon.m in Sources */,
+				78E589EA21251ADF00C388BC /* NSURLRequest+NM.m in Sources */,
+				78E589FA21251ADF00C388BC /* NMManager.m in Sources */,
+				78E589E721251ADF00C388BC /* NMHooker.m in Sources */,
+				78E589EC21251ADF00C388BC /* NSURLSession+NM.m in Sources */,
+				78E58A0521251ADF00C388BC /* NMDataModel.m in Sources */,
+				78E589FB21251ADF00C388BC /* NMConfig.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E589742125188300C388BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78E5897E2125188300C388BC /* NetworkMonitorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78E5897B2125188300C388BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78E5896E2125188300C388BC /* NetworkMonitor */;
+			targetProxy = 78E5897A2125188300C388BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78E589812125188300C388BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78E589822125188300C388BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		78E589842125188300C388BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NetworkMonitor/NetworkMonitor.pch";
+				INFOPLIST_FILE = NetworkMonitor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E589852125188300C388BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/NetworkMonitor/NetworkMonitor.pch";
+				INFOPLIST_FILE = NetworkMonitor/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78E589872125188300C388BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78E589882125188300C388BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NetworkMonitorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78E589692125188300C388BC /* Build configuration list for PBXProject "NetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E589812125188300C388BC /* Debug */,
+				78E589822125188300C388BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E589832125188300C388BC /* Build configuration list for PBXNativeTarget "NetworkMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E589842125188300C388BC /* Debug */,
+				78E589852125188300C388BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78E589862125188300C388BC /* Build configuration list for PBXNativeTarget "NetworkMonitorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78E589872125188300C388BC /* Debug */,
+				78E589882125188300C388BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		78E589D921251ADE00C388BC /* NetworkMonitor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78E589DA21251ADE00C388BC /* EagleEye.xcdatamodel */,
+			);
+			currentVersion = 78E589DA21251ADE00C388BC /* EagleEye.xcdatamodel */;
+			path = NetworkMonitor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 78E589662125188300C388BC /* Project object */;
+}
