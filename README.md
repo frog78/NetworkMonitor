@@ -109,7 +109,7 @@ traceId：一次网络请求数据记录的唯一标志。
 白名单：网络请求url或者同一url下面的不同服务端接口，如果加在了白名单中，那么对该url或者url下面服务端接口的网络请求数据不会被SDK收集。
 
 SDK定义的一些特定Key：
-
+```
 NMDATA_KEY_CMD; //接口描述
 NMDATA_KEY_ERRORTYPE; //错误类型
 NMDATA_KEY_RESPONSEDATA; //返回包（状态为失败时记录）
@@ -118,10 +118,11 @@ NMDATA_KEY_DOWNLOADMD5; //下载成功文件的md5信息
 NMDATA_KEY_ORIGINALSIZE; //原始文件大小
 NMDATA_KEY_DOWNLOADSIZE; //下载成功文件的文件大小
 NMDATA_KEY_REALDOWNLOADSIZE; //实际下载大小（md5不一致时记录）
-
+```
 注：在引入NetworkMonitor.framework之后，这些key是可以直接使用的。在拿到这些key对应的value之后，可以直接设置到扩展参数中。
 
 7、SDK中参数含义对照表
+
 | 参数key | 参数含义 |
 | ------ | ------ |
 | ti | 单次请求的唯一id |
