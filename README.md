@@ -34,6 +34,7 @@ config.enableLog = YES;
 - enableInterferenceMode：是否开启干扰模式，默认为NO;非干扰模式下，记录结束时间由SDK决定;干扰模式下，记录结束由用户手动触发。
 - urlWhiteList：排除在监控之外的url列表。
 - cmdWhiteList：排除在监控之外的cmd(即接口方法)列表。
+
 2、开始/结束监控
 完成初始化配置之后，调用NMManager中的开始/停止方法，就可以启动/关闭监控了。
 开始监控：
@@ -68,12 +69,14 @@ NSArray *data = [[NMManager sharedNMManager] getAllData];
 }
 ```
 如果设置了outputBlock，默认方式将会失效。而且所有收集到的数据将会一条一条地通过outputBlock回调输出出来，每收集到一条数据回调一次。
+
 4、数据收集模式
 数据收集模式有两种，分别是默认模式和干预模式。通过前面介绍的配置项enableInterferenceMode进行设置。这两种模式的主要区别在于，一条网络请求数据收集结束的时间。
 在默认模式下，一条请求数据收集完成，SDK内部会自动结束该次数据的收集。而在干预模式下，需要开发者手动调用以下方法完成数据收集：
 ```
 [[NMManager sharedNMManager] finishColection:traceId];
 ```
+
 5、扩展参数设置
 以上介绍的主要是默认的数据收集。但是，这些数据一般是很难满足业务需要。那么怎样将想要的其他数据放在这些基础数据一起进行收集呢？这就要用到扩展参数的设置。
 扩展参数设置又分为网络请求之前参数设置和网络请求之后参数设置。
@@ -101,6 +104,7 @@ NSString *traceId = mrq.allHTTPHeaderFields[HEAD_KEY_EETRACEID];
 ```
 [[NMManager sharedNMManager] finishColection:traceId];
 ```
+
 6、名词解释
 traceId：一次网络请求数据记录的唯一标志。
 
