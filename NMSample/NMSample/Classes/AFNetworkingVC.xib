@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,11 +15,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prS-Ju-m0b">
-                    <rect key="frame" x="20" y="84" width="374" height="50"/>
+                    <rect key="frame" x="20" y="84" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="gU1-Un-7sW"/>
@@ -34,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aoh-5W-Cgb">
-                    <rect key="frame" x="20" y="144" width="374" height="50"/>
+                    <rect key="frame" x="20" y="144" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Eld-4E-oR4"/>
@@ -48,7 +47,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPY-eH-nZX">
-                    <rect key="frame" x="20" y="204" width="374" height="50"/>
+                    <rect key="frame" x="20" y="204" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="itR-l9-4ml"/>
@@ -62,7 +61,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ips-f5-nkH">
-                    <rect key="frame" x="20" y="264" width="374" height="50"/>
+                    <rect key="frame" x="20" y="264" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="ccC-Ar-XEG"/>
@@ -76,7 +75,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVZ-ap-v6L">
-                    <rect key="frame" x="20" y="324" width="374" height="50"/>
+                    <rect key="frame" x="20" y="324" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="D8I-Fa-27U"/>
@@ -90,7 +89,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESP-IM-giZ">
-                    <rect key="frame" x="20" y="384" width="374" height="50"/>
+                    <rect key="frame" x="20" y="384" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="BgO-c9-8nk"/>
@@ -112,6 +111,7 @@
                 <constraint firstItem="prS-Ju-m0b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="JW9-4C-c3r"/>
                 <constraint firstItem="rVZ-ap-v6L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="KgU-ga-epQ"/>
                 <constraint firstAttribute="trailing" secondItem="prS-Ju-m0b" secondAttribute="trailing" constant="20" id="N9t-fn-CO9"/>
+                <constraint firstItem="prS-Ju-m0b" firstAttribute="top" secondItem="iVV-7H-1gY" secondAttribute="top" constant="40" id="OZP-a4-czs"/>
                 <constraint firstItem="Ips-f5-nkH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="PQD-08-mOD"/>
                 <constraint firstItem="KPY-eH-nZX" firstAttribute="top" secondItem="aoh-5W-Cgb" secondAttribute="bottom" constant="10" id="ZF8-Uz-hiW"/>
                 <constraint firstItem="ESP-IM-giZ" firstAttribute="top" secondItem="rVZ-ap-v6L" secondAttribute="bottom" constant="10" id="ZKo-2l-CwK"/>
@@ -121,10 +121,10 @@
                 <constraint firstAttribute="trailing" secondItem="KPY-eH-nZX" secondAttribute="trailing" constant="20" id="pWj-6J-TNw"/>
                 <constraint firstAttribute="trailing" secondItem="Ips-f5-nkH" secondAttribute="trailing" constant="20" id="rpD-jf-r87"/>
                 <constraint firstAttribute="trailing" secondItem="ESP-IM-giZ" secondAttribute="trailing" constant="20" id="sio-si-Itq"/>
-                <constraint firstItem="prS-Ju-m0b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="xGj-Mb-UTL"/>
                 <constraint firstAttribute="trailing" secondItem="rVZ-ap-v6L" secondAttribute="trailing" constant="20" id="yk9-hs-NOB"/>
                 <constraint firstItem="aoh-5W-Cgb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="zBl-yL-h9P"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="iVV-7H-1gY"/>
             <point key="canvasLocation" x="32" y="64"/>
         </view>
     </objects>

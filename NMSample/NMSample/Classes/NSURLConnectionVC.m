@@ -15,13 +15,11 @@ extern NSString *rspKey;
 extern NSString *urlKey;
 
 //#define TEST_URL @"http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
-#define TEST_URL @"https://ossptest.voicecloud.cn/oppsclient/do?c=100810&v=3.2&t=20180630093408"
 //#define TEST_URL @"https://www.google.com/"
 //#define TEST_URL @"https://wj.ahga.gov.cn/business-services/h5/remove-car-record"
-//#define TEST_URL @"https://m.taobao.com"
+#define TEST_URL @"https://m.taobao.com"
 
-#define DOWNLOAD_URL @"http://10.5.131.240/test.pdf"
-
+#define DOWNLOAD_URL @"http://download.voicecloud.cn/ygxt/20180605/85ee0f89-a95f-4424-8abc-4f6243ef79b2.zip"
 #define UPLOAD_URL @"http://test.cystorage.cycore.cn"
 
 @interface NSURLConnectionVC ()<NSURLConnectionDataDelegate> {

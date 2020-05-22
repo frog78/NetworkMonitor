@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,47 +23,43 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="url白名单，如:[&quot;http://test.cystorage.cycore.cn&quot;]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUi-6f-IbV">
-                    <rect key="frame" x="10" y="114" width="355" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="url白名单，如:[&quot;http://test.cystorage.cycore.cn&quot;]" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XUi-6f-IbV">
+                    <rect key="frame" x="10" y="114" width="394" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="uFc-lu-eod"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cmd白名单，如:[&quot;getId&quot;,&quot;save&quot;]" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9n-Dh-JoP">
-                    <rect key="frame" x="10" y="152" width="355" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="cmd白名单，如:[&quot;getId&quot;,&quot;save&quot;]" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9n-Dh-JoP">
+                    <rect key="frame" x="10" y="152" width="394" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="u2e-p4-kkD"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请求扩展参数，如:{&quot;cmd&quot;:&quot;getId&quot;}" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-37-4ML">
-                    <rect key="frame" x="10" y="190" width="355" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请求扩展参数，如:{&quot;cmd&quot;:&quot;getId&quot;}" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lf-37-4ML">
+                    <rect key="frame" x="10" y="190" width="394" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="RVg-nv-YK1"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="响应扩展参数，如:{&quot;etp&quot;:&quot;1&quot;}" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-NE-3di">
-                    <rect key="frame" x="10" y="228" width="355" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="响应扩展参数，如:{&quot;etp&quot;:&quot;1&quot;}" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-NE-3di">
+                    <rect key="frame" x="10" y="228" width="394" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="hJ7-4g-DIU"/>
                     </constraints>
-                    <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TFP-BU-ekZ">
-                    <rect key="frame" x="316" y="284" width="51" height="31"/>
+                    <rect key="frame" x="355" y="284" width="51" height="31"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="31" id="IJY-tF-A6A"/>
                         <constraint firstAttribute="width" constant="49" id="oTM-IH-UQS"/>
@@ -94,7 +89,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lJ9-MH-p2Q">
-                    <rect key="frame" x="316" y="322" width="51" height="31"/>
+                    <rect key="frame" x="355" y="322" width="51" height="31"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="49" id="d9H-8N-sFQ"/>
                         <constraint firstAttribute="height" constant="31" id="pT7-uQ-Dij"/>
@@ -114,7 +109,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oel-Kd-UPe">
-                    <rect key="frame" x="316" y="360" width="51" height="31"/>
+                    <rect key="frame" x="355" y="360" width="51" height="31"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="49" id="ZDB-AD-Vw8"/>
                         <constraint firstAttribute="height" constant="31" id="awj-3a-ZM7"/>
@@ -124,7 +119,7 @@
                     </connections>
                 </switch>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RFq-oZ-EDU">
-                    <rect key="frame" x="20" y="405" width="335" height="40"/>
+                    <rect key="frame" x="20" y="405" width="374" height="40"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="FNt-KA-iPc"/>
@@ -137,31 +132,30 @@
                         <action selector="startBtnClick:" destination="-1" eventType="touchUpInside" id="HSb-oj-qOd"/>
                     </connections>
                 </button>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请求url" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wic-Od-2Tr">
-                    <rect key="frame" x="10" y="74" width="355" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请求url" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wic-Od-2Tr">
+                    <rect key="frame" x="10" y="74" width="394" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="355" id="B52-9D-Hr7"/>
                         <constraint firstAttribute="height" constant="30" id="RZy-JG-MIZ"/>
                     </constraints>
+                    <viewLayoutGuide key="safeArea" id="bIS-Zg-W4p"/>
                     <nil key="textColor"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="xyv-1F-7U9" firstAttribute="top" secondItem="hkf-0a-cIk" secondAttribute="bottom" constant="8" id="1hC-CQ-1Gz"/>
+                <constraint firstItem="XUi-6f-IbV" firstAttribute="top" secondItem="wic-Od-2Tr" secondAttribute="bottom" constant="10" id="42r-Zt-mVO"/>
                 <constraint firstItem="hkf-0a-cIk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="4g9-CX-ON4"/>
+                <constraint firstItem="wic-Od-2Tr" firstAttribute="top" secondItem="Vku-cq-XLe" secondAttribute="top" constant="30" id="5Oy-Ry-gEy"/>
                 <constraint firstItem="dzl-2u-fhl" firstAttribute="top" secondItem="Qwp-NE-3di" secondAttribute="bottom" constant="26" id="5nB-0T-d9Y"/>
                 <constraint firstItem="Qwp-NE-3di" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="6kH-oY-Zbr"/>
                 <constraint firstItem="wic-Od-2Tr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="DbB-0B-H4V"/>
                 <constraint firstItem="dzl-2u-fhl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="EVl-hF-kTa"/>
-                <constraint firstItem="XUi-6f-IbV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="114" id="Ffv-PN-vux"/>
                 <constraint firstItem="xyv-1F-7U9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Imk-wP-sUZ"/>
                 <constraint firstItem="z9n-Dh-JoP" firstAttribute="top" secondItem="XUi-6f-IbV" secondAttribute="bottom" constant="8" id="J1y-M6-Lou"/>
                 <constraint firstItem="RFq-oZ-EDU" firstAttribute="top" secondItem="oel-Kd-UPe" secondAttribute="bottom" constant="14" id="NRi-s7-Fve"/>
                 <constraint firstAttribute="trailing" secondItem="oel-Kd-UPe" secondAttribute="trailing" constant="10" id="NlD-hU-ILi"/>
-                <constraint firstItem="wic-Od-2Tr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="OqS-Wc-Sx9"/>
                 <constraint firstItem="hkf-0a-cIk" firstAttribute="top" secondItem="dzl-2u-fhl" secondAttribute="bottom" constant="8" id="QeE-D3-L2p"/>
                 <constraint firstItem="5lf-37-4ML" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Qh4-dz-AuH"/>
                 <constraint firstItem="oel-Kd-UPe" firstAttribute="top" secondItem="lJ9-MH-p2Q" secondAttribute="bottom" constant="7" id="RG5-0B-Wxs"/>
@@ -181,6 +175,7 @@
                 <constraint firstAttribute="trailing" secondItem="z9n-Dh-JoP" secondAttribute="trailing" constant="10" id="vsg-Gm-oyu"/>
                 <constraint firstAttribute="trailing" secondItem="wic-Od-2Tr" secondAttribute="trailing" constant="10" id="wUY-ZI-cKI"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="Vku-cq-XLe"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
