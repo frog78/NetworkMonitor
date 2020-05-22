@@ -37,11 +37,11 @@ extern NSString *NMDATA_KEY_ERRORDETAIL;
 extern NSString *NMDATA_KEY_REQUESTSIZE_HEAD;
 extern NSString *NMDATA_KEY_REQUESTSIZE_BODY;
 
-typedef enum : NSUInteger {
-    CacheDataTypeDownload,
+typedef NS_ENUM(NSInteger, CacheDataType) {
+    CacheDataTypeDownload = 0,
     CacheDataTypeUpload,
-    CacheDataTypeOther,
-} CacheDataType;
+    CacheDataTypeOther
+};
 
 @interface NMCache : NSObject
 

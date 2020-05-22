@@ -239,10 +239,10 @@
 		78E589D421251ADE00C388BC /* DAO */ = {
 			isa = PBXGroup;
 			children = (
-				78E589D521251ADE00C388BC /* BaseDAO.m */,
-				78E589D621251ADE00C388BC /* NMDataDAO.m */,
 				78E589D721251ADE00C388BC /* BaseDAO.h */,
+				78E589D521251ADE00C388BC /* BaseDAO.m */,
 				78E589D821251ADE00C388BC /* NMDataDAO.h */,
+				78E589D621251ADE00C388BC /* NMDataDAO.m */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -572,10 +572,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -596,10 +598,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NetworkMonitor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Release;
 		};

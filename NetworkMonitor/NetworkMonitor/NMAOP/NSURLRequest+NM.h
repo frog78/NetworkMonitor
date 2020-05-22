@@ -11,10 +11,10 @@
 
 @interface NSURLRequest (EE)
 
-@property (nonatomic, assign, readonly)NSUInteger statusLineSize;
+@property (nonatomic, assign, readonly) NSUInteger statusLineSize;
 
-@property (nonatomic, assign, readonly)NSUInteger headerSize;
+@property (nonatomic, assign, readonly) NSUInteger headerSize;
 
-@property (nonatomic, assign, readonly)NSUInteger bodySize;
+@property (nonatomic, assign, readonly) NSUInteger bodySize;
 
 @end

@@ -15,7 +15,7 @@
 
 @interface NMObjectDelegate()
 
-@property (nonatomic, strong)NSMutableArray *selList;
+@property (nonatomic, strong) NSMutableArray *selList;
 
 @end
 
@@ -64,21 +64,6 @@
         EELog(@"-------->over<--------");
         return;
     }
-//    for (NSURLSessionTaskTransactionMetrics *mrc in metrics.transactionMetrics) {
-//        NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-//        NSLog(@"fetchStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.fetchStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"domainLookupStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.domainLookupStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"domainLookupEndDate:%@", [NSString stringWithFormat:@"%2f", [mrc.domainLookupEndDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"connectStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.connectStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"secureConnectionStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.secureConnectionStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"secureConnectionEndDate:%@", [NSString stringWithFormat:@"%2f", [mrc.secureConnectionEndDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"connectEndDate:%@", [NSString stringWithFormat:@"%2f", [mrc.connectEndDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"requestStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.requestStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"requestEndDate:%@", [NSString stringWithFormat:@"%2f", [mrc.requestEndDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"responseStartDate:%@", [NSString stringWithFormat:@"%2f", [mrc.responseStartDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"responseEndDate:%@", [NSString stringWithFormat:@"%2f", [mrc.responseEndDate timeIntervalSince1970] * 1000]);
-//        NSLog(@"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
-//    }
     if (metric) {
         //请求开始时间
         NSString *sreq = [NSString stringWithFormat:@"%.f", [metric.fetchStartDate timeIntervalSince1970] * 1000];
@@ -148,7 +133,6 @@ didCompleteWithError:(nullable NSError *)error {
         } else {
             [[NMCache sharedNMCache] cacheValue:@"failure" key:NMDATA_KEY_STATE traceId:traceId];
         }
-//        ress = [NSString stringWithFormat:@"%lu", (unsigned long)error.description.length + [[NMCache sharedNMCache] getDataByTraceId:traceId].length + [[[NMCache sharedNMCache] getNumByTraceId:traceId type:CacheDataTypeDownload] unsignedLongValue]];
     } else {
         switch (statusCode) {
             case 200:
@@ -161,14 +145,12 @@ didCompleteWithError:(nullable NSError *)error {
                 [[NMCache sharedNMCache] cacheValue:@"failure" key:NMDATA_KEY_STATE traceId:traceId];
                 break;
         }
-//        ress = [NSString stringWithFormat:@"%lu", (unsigned long)httpResponse.description.length +  [[NMCache sharedNMCache] getDataByTraceId:traceId].length + [[[NMCache sharedNMCache] getNumByTraceId:traceId type:CacheDataTypeDownload] unsignedLongValue]];
     }
     [NMObjectDelegate survayUpload:traceId];
     ress = [NSString stringWithFormat:@"%lu", (unsigned long)statusLineSize +  bodySize + headerSize + [[[NMCache sharedNMCache] getNumByTraceId:traceId type:CacheDataTypeDownload] unsignedLongValue]];
     [[NMCache sharedNMCache] cacheValue:ress key:NMDATA_KEY_RESPONSESIZE traceId:traceId];
     [[NMCache sharedNMCache] removeDataByTraceId:traceId];
     [[NMCache sharedNMCache] removeNumByTraceId:traceId type:CacheDataTypeDownload];
-//    [[NMCache sharedNMCache] cacheValue:[NSString stringWithFormat:@"%lu", (long)statusCode] key:NMDATA_KEY_STATUSCODE traceId:traceId];
     if (httpResponse.MIMEType) {
         [[NMCache sharedNMCache] cacheValue:httpResponse.MIMEType key:NMDATA_KEY_CONTENTTYPE traceId:traceId];
     } else {
@@ -327,7 +309,6 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend {
     NSUInteger statusLineSize = httpResponse.statusLineSize;
     NSUInteger headerSize = httpResponse.headerSize;
     NSString *length = [NSString stringWithFormat:@"%lu", (unsigned long)statusLineSize + headerSize];
-//    [[NMCache sharedNMCache] cacheValue:[NSString stringWithFormat:@"%lu", (unsigned long)httpResponse.statusCode] key:NMDATA_KEY_STATUSCODE traceId:traceId];
     [[NMCache sharedNMCache] cacheValue:length key:NMDATA_KEY_RESPONSESIZE traceId:traceId];
     EELog(@"-------->over<--------");
 }

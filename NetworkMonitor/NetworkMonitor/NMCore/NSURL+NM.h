@@ -17,7 +17,7 @@
 @interface NSURL (NM)
 
 //在NSURL中添加扩展参数
-@property (nonatomic, strong)NSDictionary *extendedParameter;
+@property (nonatomic, strong) NSDictionary *extendedParameter;
 
 
 @end
