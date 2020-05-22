@@ -13,7 +13,7 @@
 
 @interface NMManager()
 
-@property (nonatomic, strong)NMConfig *NMConfig;
+@property (nonatomic, strong) NMConfig *NMConfig;
 
 @end
 

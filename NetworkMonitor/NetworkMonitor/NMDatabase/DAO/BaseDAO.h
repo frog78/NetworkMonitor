@@ -11,18 +11,18 @@
 
 @interface BaseDAO : NSObject
 
-@property (strong,nonatomic)NSManagedObjectContext *context;
-@property (strong,nonatomic)NSManagedObjectModel *model;
-@property (strong,nonatomic)NSPersistentStoreCoordinator *coordinator;
+@property (strong, nonatomic) NSManagedObjectContext *context;
+@property (strong, nonatomic) NSManagedObjectModel *model;
+@property (strong, nonatomic) NSPersistentStoreCoordinator *coordinator;
 
--(NSURL *)applicationDocumentsDirectory;
+- (NSURL *)applicationDocumentsDirectory;
 
--(NSManagedObjectModel *)managedObjectModel;
+- (NSManagedObjectModel *)managedObjectModel;
 
--(NSPersistentStoreCoordinator *)persistentStoreCoordinator;
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 
--(NSManagedObjectContext *)managedObjectContext;
+- (NSManagedObjectContext *)managedObjectContext;
 
--(void)saveContext;
+- (void)saveContext;
 
 @end

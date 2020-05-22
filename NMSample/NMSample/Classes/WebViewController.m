@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     WKWebView *webview = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-//    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Hybrid_frame_demo/index.html" withExtension:nil];
     webview.navigationDelegate = self;
     NSURL *url = [NSURL URLWithString:@"https://wj.ahga.gov.cn/publicsso/v2?openid.mode=checkid_setup&openid.return_to=https%3A%2F%2Fwj.ahga.gov.cn%2Fbusiness-services%2Fssoclient%3Freturn_url%3D%252Fbusiness-services%252Fh5%252Fremove-car-record&openid.ex.client_id=bg"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -38,10 +37,6 @@
     decisionHandler(WKNavigationResponsePolicyAllow);
 }
 
-/*! @abstract Invoked when a main frame navigation starts.
- @param webView The web view invoking the delegate method.
- @param navigation The navigation.
- */
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
     
 }
@@ -50,38 +45,18 @@
     
 }
 
-/*! @abstract Invoked when an error occurs while starting to load data for
- the main frame.
- @param webView The web view invoking the delegate method.
- @param navigation The navigation.
- @param error The error that occurred.
- */
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
     
 }
 
-/*! @abstract Invoked when content starts arriving for the main frame.
- @param webView The web view invoking the delegate method.
- @param navigation The navigation.
- */
 - (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation {
     
 }
 
-/*! @abstract Invoked when a main frame navigation completes.
- @param webView The web view invoking the delegate method.
- @param navigation The navigation.
- */
 - (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation {
     
 }
 
-/*! @abstract Invoked when an error occurs during a committed main frame
- navigation.
- @param webView The web view invoking the delegate method.
- @param navigation The navigation.
- @param error The error that occurred.
- */
 - (void)webView:(WKWebView *)webView didFailNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error {
     
 }

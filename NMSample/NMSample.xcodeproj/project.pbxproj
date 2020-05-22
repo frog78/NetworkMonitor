@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		785EFE2721254EFD00E5C47F /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785EFE2621254EFD00E5C47F /* NetworkMonitor.framework */; };
-		785EFE292125505200E5C47F /* NetworkMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 785EFE2621254EFD00E5C47F /* NetworkMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		785EFE2B2125505200E5C47F /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78E5898A21251A3900C388BC /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		78E589432125185900C388BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589422125185900C388BC /* AppDelegate.m */; };
 		78E589492125185900C388BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E589472125185900C388BC /* Main.storyboard */; };
 		78E5894B2125185A00C388BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E5894A2125185A00C388BC /* Assets.xcassets */; };
 		78E5894E2125185A00C388BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E5894C2125185A00C388BC /* LaunchScreen.storyboard */; };
 		78E589512125185A00C388BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E589502125185A00C388BC /* main.m */; };
 		78E5895B2125185A00C388BC /* NMSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E5895A2125185A00C388BC /* NMSampleTests.m */; };
-		78E5898B21251A3900C388BC /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78E5898A21251A3900C388BC /* AFNetworking.framework */; };
 		78E5899F21251A4900C388BC /* AFNetworkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E5898D21251A4900C388BC /* AFNetworkingVC.m */; };
 		78E589A021251A4900C388BC /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E5898E21251A4900C388BC /* ConfigViewController.xib */; };
 		78E589A121251A4900C388BC /* NSURLConnectionDownloadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E5898F21251A4900C388BC /* NSURLConnectionDownloadDelegate.m */; };
@@ -28,6 +24,10 @@
 		78E589A721251A4900C388BC /* NSURLConnectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E5899921251A4900C388BC /* NSURLConnectionVC.xib */; };
 		78E589A821251A4900C388BC /* NSURLSessionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78E5899A21251A4900C388BC /* NSURLSessionVC.xib */; };
 		78E589A921251A4900C388BC /* NSURLSessionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E5899C21251A4900C388BC /* NSURLSessionVC.m */; };
+		D26BAAFA24777CAA0084D789 /* NetworkMonitor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26BAAF924777CAA0084D789 /* NetworkMonitor.framework */; };
+		D26BAAFB24777CAA0084D789 /* NetworkMonitor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D26BAAF924777CAA0084D789 /* NetworkMonitor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D26BAAFE24777D0D0084D789 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26BAAFC24777D070084D789 /* AFNetworking.framework */; };
+		D26BAAFF24777D0D0084D789 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D26BAAFC24777D070084D789 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				785EFE292125505200E5C47F /* NetworkMonitor.framework in Embed Frameworks */,
-				785EFE2B2125505200E5C47F /* AFNetworking.framework in Embed Frameworks */,
+				D26BAAFB24777CAA0084D789 /* NetworkMonitor.framework in Embed Frameworks */,
+				D26BAAFF24777D0D0084D789 /* AFNetworking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +56,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		785EFE2621254EFD00E5C47F /* NetworkMonitor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkMonitor.framework; path = "../../../../../../../Library/Developer/Xcode/DerivedData/NetworkMonitor-edrtnwqvtjowpqbcvnsjjrqpdxmy/Build/Products/Debug-iphonesimulator/NetworkMonitor.framework"; sourceTree = "<group>"; };
 		78E5893E2125185900C388BC /* NMSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E589412125185900C388BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		78E589422125185900C388BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -68,7 +67,6 @@
 		78E589562125185A00C388BC /* NMSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NMSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E5895A2125185A00C388BC /* NMSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NMSampleTests.m; sourceTree = "<group>"; };
 		78E5895C2125185A00C388BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78E5898A21251A3900C388BC /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = "<group>"; };
 		78E5898D21251A4900C388BC /* AFNetworkingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingVC.m; sourceTree = "<group>"; };
 		78E5898E21251A4900C388BC /* ConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
 		78E5898F21251A4900C388BC /* NSURLConnectionDownloadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLConnectionDownloadDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +85,8 @@
 		78E5899C21251A4900C388BC /* NSURLSessionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURLSessionVC.m; sourceTree = "<group>"; };
 		78E5899D21251A4900C388BC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		78E5899E21251A4900C388BC /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		D26BAAF924777CAA0084D789 /* NetworkMonitor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkMonitor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D26BAAFC24777D070084D789 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = NMSample/Frameworks/AFNetworking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				785EFE2721254EFD00E5C47F /* NetworkMonitor.framework in Frameworks */,
-				78E5898B21251A3900C388BC /* AFNetworking.framework in Frameworks */,
+				D26BAAFA24777CAA0084D789 /* NetworkMonitor.framework in Frameworks */,
+				D26BAAFE24777D0D0084D789 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +115,7 @@
 				78E589402125185900C388BC /* NMSample */,
 				78E589592125185A00C388BC /* NMSampleTests */,
 				78E5893F2125185900C388BC /* Products */,
+				D26BAAF524777B910084D789 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				78E5898C21251A4900C388BC /* Classes */,
-				78E5898921251A3900C388BC /* Frameworks */,
 				78E589412125185900C388BC /* AppDelegate.h */,
 				78E589422125185900C388BC /* AppDelegate.m */,
 				78E589472125185900C388BC /* Main.storyboard */,
@@ -152,38 +152,38 @@
 			path = NMSampleTests;
 			sourceTree = "<group>";
 		};
-		78E5898921251A3900C388BC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				785EFE2621254EFD00E5C47F /* NetworkMonitor.framework */,
-				78E5898A21251A3900C388BC /* AFNetworking.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 		78E5898C21251A4900C388BC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				78E5898D21251A4900C388BC /* AFNetworkingVC.m */,
-				78E5898E21251A4900C388BC /* ConfigViewController.xib */,
-				78E5898F21251A4900C388BC /* NSURLConnectionDownloadDelegate.m */,
-				78E5899021251A4900C388BC /* AFNetworkingVC.xib */,
-				78E5899121251A4900C388BC /* NSURLConnectionVC.h */,
-				78E5899221251A4900C388BC /* NSURLSessionVC.h */,
-				78E5899321251A4900C388BC /* ConfigViewController.m */,
-				78E5899421251A4900C388BC /* ViewController.m */,
-				78E5899521251A4900C388BC /* WebViewController.m */,
-				78E5899621251A4900C388BC /* NSURLConnectionDownloadDelegate.h */,
 				78E5899721251A4900C388BC /* AFNetworkingVC.h */,
+				78E5898D21251A4900C388BC /* AFNetworkingVC.m */,
+				78E5899021251A4900C388BC /* AFNetworkingVC.xib */,
+				78E5899B21251A4900C388BC /* ConfigViewController.h */,
+				78E5899321251A4900C388BC /* ConfigViewController.m */,
+				78E5898E21251A4900C388BC /* ConfigViewController.xib */,
+				78E5899621251A4900C388BC /* NSURLConnectionDownloadDelegate.h */,
+				78E5898F21251A4900C388BC /* NSURLConnectionDownloadDelegate.m */,
+				78E5899121251A4900C388BC /* NSURLConnectionVC.h */,
 				78E5899821251A4900C388BC /* NSURLConnectionVC.m */,
 				78E5899921251A4900C388BC /* NSURLConnectionVC.xib */,
-				78E5899A21251A4900C388BC /* NSURLSessionVC.xib */,
-				78E5899B21251A4900C388BC /* ConfigViewController.h */,
+				78E5899221251A4900C388BC /* NSURLSessionVC.h */,
 				78E5899C21251A4900C388BC /* NSURLSessionVC.m */,
+				78E5899A21251A4900C388BC /* NSURLSessionVC.xib */,
 				78E5899D21251A4900C388BC /* ViewController.h */,
+				78E5899421251A4900C388BC /* ViewController.m */,
 				78E5899E21251A4900C388BC /* WebViewController.h */,
+				78E5899521251A4900C388BC /* WebViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		D26BAAF524777B910084D789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D26BAAFC24777D070084D789 /* AFNetworking.framework */,
+				D26BAAF924777CAA0084D789 /* NetworkMonitor.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,13 +461,16 @@
 					"$(PROJECT_DIR)/NMSample/Frameworks",
 				);
 				INFOPLIST_FILE = NMSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NMSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Debug;
 		};
@@ -481,13 +484,16 @@
 					"$(PROJECT_DIR)/NMSample/Frameworks",
 				);
 				INFOPLIST_FILE = NMSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.frog78.NMSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7s";
 			};
 			name = Release;
 		};

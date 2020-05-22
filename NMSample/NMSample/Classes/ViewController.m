@@ -28,19 +28,19 @@
 - (void)initViews {
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"网络监控调试";
-    UIButton *afnetworking = [[UIButton alloc] initWithFrame:CGRectMake(20, 84, [UIScreen mainScreen].bounds.size.width - 40, 50)];
+    UIButton *afnetworking = [[UIButton alloc] initWithFrame:CGRectMake(20, 120, [UIScreen mainScreen].bounds.size.width - 40, 50)];
     [afnetworking setBackgroundColor:[UIColor blueColor]];
     [afnetworking setTitle:@"AFNetworking" forState:UIControlStateNormal];
     [afnetworking addTarget:self action:@selector(afnetworking) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:afnetworking];
     
-    UIButton *urlconnection = [[UIButton alloc] initWithFrame:CGRectMake(20, 154, [UIScreen mainScreen].bounds.size.width - 40, 50)];
+    UIButton *urlconnection = [[UIButton alloc] initWithFrame:CGRectMake(20, 190, [UIScreen mainScreen].bounds.size.width - 40, 50)];
     [urlconnection setBackgroundColor:[UIColor blueColor]];
     [urlconnection setTitle:@"URLConnection" forState:UIControlStateNormal];
     [urlconnection addTarget:self action:@selector(urlconnection) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:urlconnection];
     
-    UIButton *urlsession = [[UIButton alloc] initWithFrame:CGRectMake(20, 224, [UIScreen mainScreen].bounds.size.width - 40, 50)];
+    UIButton *urlsession = [[UIButton alloc] initWithFrame:CGRectMake(20, 260, [UIScreen mainScreen].bounds.size.width - 40, 50)];
     [urlsession setBackgroundColor:[UIColor blueColor]];
     [urlsession setTitle:@"URLSession" forState:UIControlStateNormal];
     [urlsession addTarget:self action:@selector(urlsession) forControlEvents:UIControlEventTouchUpInside];

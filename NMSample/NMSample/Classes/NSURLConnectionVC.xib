@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,11 +15,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7K-5o-Pic">
-                    <rect key="frame" x="20" y="84" width="374" height="50"/>
+                    <rect key="frame" x="20" y="84" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="hix-D9-Hfg"/>
@@ -34,7 +33,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2R0-MO-Obb">
-                    <rect key="frame" x="20" y="139" width="374" height="50"/>
+                    <rect key="frame" x="20" y="139" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="aLf-Lh-eRc"/>
@@ -48,7 +47,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7O4-II-i5d">
-                    <rect key="frame" x="20" y="194" width="374" height="50"/>
+                    <rect key="frame" x="20" y="194" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="jf6-kn-hUV"/>
@@ -62,7 +61,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiF-zD-7tD">
-                    <rect key="frame" x="20" y="249" width="374" height="50"/>
+                    <rect key="frame" x="20" y="249" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="bju-m5-8Yq"/>
@@ -76,7 +75,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oq2-Aw-L8l">
-                    <rect key="frame" x="20" y="304" width="374" height="50"/>
+                    <rect key="frame" x="20" y="304" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Qsv-Ah-o6x"/>
@@ -90,7 +89,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E43-Nc-FP4">
-                    <rect key="frame" x="20" y="359" width="374" height="50"/>
+                    <rect key="frame" x="20" y="359" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="oA8-IL-Jhf"/>
@@ -104,7 +103,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFs-j3-kY2">
-                    <rect key="frame" x="20" y="414" width="374" height="50"/>
+                    <rect key="frame" x="20" y="414" width="335" height="50"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="u4h-zI-aKJ"/>
@@ -122,6 +121,7 @@
             <constraints>
                 <constraint firstItem="OiF-zD-7tD" firstAttribute="top" secondItem="7O4-II-i5d" secondAttribute="bottom" constant="5" id="1bJ-Fo-wqH"/>
                 <constraint firstItem="UFs-j3-kY2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="3At-tT-v6S"/>
+                <constraint firstItem="p7K-5o-Pic" firstAttribute="top" secondItem="TAV-EW-XwW" secondAttribute="top" constant="40" id="JUf-dg-Kuf"/>
                 <constraint firstAttribute="trailing" secondItem="UFs-j3-kY2" secondAttribute="trailing" constant="20" id="K7d-85-TKe"/>
                 <constraint firstItem="p7K-5o-Pic" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="L4s-e0-dQd"/>
                 <constraint firstItem="oq2-Aw-L8l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Ntm-Oz-VIA"/>
@@ -139,9 +139,9 @@
                 <constraint firstAttribute="trailing" secondItem="p7K-5o-Pic" secondAttribute="trailing" constant="20" id="r54-Ri-6iD"/>
                 <constraint firstAttribute="trailing" secondItem="OiF-zD-7tD" secondAttribute="trailing" constant="20" id="rdy-N3-8kb"/>
                 <constraint firstItem="UFs-j3-kY2" firstAttribute="top" secondItem="E43-Nc-FP4" secondAttribute="bottom" constant="5" id="tjx-xE-2zr"/>
-                <constraint firstItem="p7K-5o-Pic" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="84" id="v7K-qN-Xu4"/>
                 <constraint firstItem="E43-Nc-FP4" firstAttribute="top" secondItem="oq2-Aw-L8l" secondAttribute="bottom" constant="5" id="vCv-hT-6qo"/>
             </constraints>
+            <viewLayoutGuide key="safeArea" id="TAV-EW-XwW"/>
             <point key="canvasLocation" x="23" y="-118"/>
         </view>
     </objects>

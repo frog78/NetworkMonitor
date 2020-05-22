@@ -17,7 +17,7 @@
  设置了该block，SDK每收集一条完整数据，就会通过该block回调出去
  如果不设置该block，SDK收集的数据将缓存在数据库中
  */
-@property (nonatomic, copy)DataOutputBlock outputBlock;
+@property (nonatomic, copy) DataOutputBlock outputBlock;
 
 /**
  获取单例

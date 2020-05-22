@@ -13,13 +13,11 @@ extern NSString *rtpKey;
 extern NSString *rspKey;
 extern NSString *urlKey;
 
-//#define TEST_URL @"http://wthrcdn.etouch.cn/weather_mini?citykey=101010100"
-#define TEST_URL @"https://www.xunfei.cn/gettuid?bizid=100ime&uid=180606190946715065"
 //#define TEST_URL @"http://download.voicecloud.cn/ygxt/20180605/85ee0f89-a95f-4424-8abc-4f6243ef79b2.zip"
 //#define TEST_URL @"https://wj.ahga.gov.cn/business-services/h5/remove-car-record"
-//#define TEST_URL @"https://h5.m.taobao.com"
+#define TEST_URL @"https://h5.m.taobao.com"
 
-#define DOWNLOAD_URL @"http://10.5.131.240/test.pdf"
+#define DOWNLOAD_URL @"http://download.voicecloud.cn/ygxt/20180605/85ee0f89-a95f-4424-8abc-4f6243ef79b2.zip"
 
 #define UPLOAD_URL @"http://test.cystorage.cycore.cn"
 
@@ -59,7 +57,7 @@ extern NSString *urlKey;
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:^(NSData *_Nullable data, NSURLResponse *_Nullable response, NSError * _Nullable error) {
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
         NSString *traceId = httpResponse.allHeaderFields[HEAD_KEY_EETRACEID];
-        [[NMManager sharedNMManager] setExtendedParameter:rsp traceId:traceId];
+        [[NMManager sharedNMManager] setExtendedParameter:self->rsp traceId:traceId];
         if ([[NMManager sharedNMManager] getConfig].enableInterferenceMode) {
             [[NMManager sharedNMManager] finishColection:traceId];
         }

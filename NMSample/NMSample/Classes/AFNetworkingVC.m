@@ -15,13 +15,10 @@ extern NSString *rspKey;
 extern NSString *urlKey;
 
 #define TEST_URL @"https://m.taobao.com"
-//#define TEST_URL @"https://www.xunfei.cn/gettuid?bizid=100ime&uid=180606190946715065"
-//#define TEST_URL @"http://192.168.45.15:9000/401"
 //#define TEST_URL @"https://wj.ahga.gov.cn/business-services/h5/remove-car-record"
 //#define TEST_URL @"https://m.taobao.com"
-
-//#define DOWNLOAD_URL @"http://10.5.128.203/test.pdf"
 #define DOWNLOAD_URL @"http://download.voicecloud.cn/ygxt/20180605/85ee0f89-a95f-4424-8abc-4f6243ef79b2.zip"
+
 #define UPLOAD_URL @"http://test.cystorage.cycore.cn"
 
 @interface AFNetworkingVC () {
@@ -67,7 +64,7 @@ extern NSString *urlKey;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableURLRequest *mrq = (NSMutableURLRequest *)task.originalRequest;
         NSString *traceId = mrq.allHTTPHeaderFields[HEAD_KEY_EETRACEID];
-        [[NMManager sharedNMManager] setExtendedParameter:rsp traceId:traceId];
+        [[NMManager sharedNMManager] setExtendedParameter:self->rsp traceId:traceId];
         if ([[NMManager sharedNMManager] getConfig].enableInterferenceMode) {
             [[NMManager sharedNMManager] finishColection:traceId];
         }
@@ -105,7 +102,7 @@ extern NSString *urlKey;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableURLRequest *mrq = (NSMutableURLRequest *)task.originalRequest;
         NSString *traceId = mrq.allHTTPHeaderFields[HEAD_KEY_EETRACEID];
-        [[NMManager sharedNMManager] setExtendedParameter:rsp traceId:traceId];
+        [[NMManager sharedNMManager] setExtendedParameter:self->rsp traceId:traceId];
         if ([[NMManager sharedNMManager] getConfig].enableInterferenceMode) {
             [[NMManager sharedNMManager] finishColection:traceId];
         }
@@ -143,7 +140,7 @@ extern NSString *urlKey;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableURLRequest *mrq = (NSMutableURLRequest *)task.originalRequest;
         NSString *traceId = mrq.allHTTPHeaderFields[HEAD_KEY_EETRACEID];
-        [[NMManager sharedNMManager] setExtendedParameter:rsp traceId:traceId];
+        [[NMManager sharedNMManager] setExtendedParameter:self->rsp traceId:traceId];
         if ([[NMManager sharedNMManager] getConfig].enableInterferenceMode) {
             [[NMManager sharedNMManager] finishColection:traceId];
         }
@@ -184,7 +181,7 @@ extern NSString *urlKey;
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSMutableURLRequest *mrq = (NSMutableURLRequest *)task.originalRequest;
         NSString *traceId = mrq.allHTTPHeaderFields[HEAD_KEY_EETRACEID];
-        [[NMManager sharedNMManager] setExtendedParameter:rsp traceId:traceId];
+        [[NMManager sharedNMManager] setExtendedParameter:self->rsp traceId:traceId];
         if ([[NMManager sharedNMManager] getConfig].enableInterferenceMode) {
             [[NMManager sharedNMManager] finishColection:traceId];
         }

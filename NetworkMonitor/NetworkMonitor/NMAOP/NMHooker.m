@@ -24,6 +24,7 @@
     method_exchangeImplementations(originalMethod, swizzledMethod);
 }
 
+
 + (void)hookClass:(NSString *)oriClass sel:(NSString *)oriSel withClass:(NSString *)newClass andSel:(NSString *)newSel {
     Class hookedClass = objc_getClass([oriClass UTF8String]);
     Class swizzledClass = objc_getClass([newClass UTF8String]);
