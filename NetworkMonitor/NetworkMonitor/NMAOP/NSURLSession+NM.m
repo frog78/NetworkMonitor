@@ -34,7 +34,10 @@ typedef void(^UploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * 
     //便捷式调用方法
     [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithRequest:completionHandler:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithRequest:completionHandler:"];
     //内部调用便捷式调用方法，不需要hook
-//    [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithRequest:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithRequest:"];
+    //iOS 13.0以上不再走便捷式方法，需要hook
+    if (@available(iOS 13, *)) {
+        [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithRequest:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithRequest:"];
+    }
     //内部调用dataTaskWithRequest:，不需要hook
 //    [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithURL:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithURL:"];
     //内部调用dataTaskWithRequest:completionHandler:，不需要hook
@@ -121,9 +124,26 @@ typedef void(^UploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * 
 //}
 
 //网络请求，调用dataTaskWithRequest:completionHandler:
-//- (NSURLSessionDataTask *)hook_dataTaskWithRequest:(NSURLRequest *)request {
-//    return [self hook_dataTaskWithRequest:request];
-//}
+- (NSURLSessionDataTask *)hook_dataTaskWithRequest:(NSURLRequest *)request {
+    EELog(@"-------->start<--------");
+    if ([NMUtil isNetworkMonitorOn]) {
+        //设置traceId，如果成功生成traceId，说明不在白名单中；
+        //如果生成traceId为空，则说明在白名单中
+        NSString *traceId = [[self class] isInWhiteLists:request];
+        if (!traceId) {
+            EELog(@"-------->over<--------");
+            return [self hook_dataTaskWithRequest:request];
+        }
+        //请求相关监控
+        NSMutableURLRequest *rq = [NMUtil mutableRequest:request];
+        [rq setValue:traceId forHTTPHeaderField:HEAD_KEY_EETRACEID];
+        [[self class] survayRequest:rq traceId:traceId];
+        EELog(@"-------->over<--------");
+        return [self hook_dataTaskWithRequest:rq];
+    }
+    EELog(@"-------->over<--------");
+    return [self hook_dataTaskWithRequest:request];
+}
 
 //- (NSURLSessionDataTask *)hook_dataTaskWithURL:(NSURL *)url {
 //    return [self hook_dataTaskWithURL:url];
