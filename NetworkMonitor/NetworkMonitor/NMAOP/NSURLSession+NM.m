@@ -37,11 +37,9 @@ typedef void(^UploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * 
     //iOS 13.0以上不再走便捷式方法，需要hook
     if (@available(iOS 13, *)) {
         [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithRequest:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithRequest:"];
+        [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithURL:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithURL:"];
+        [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithURL:completionHandler:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithURL:completionHandler:"];
     }
-    //内部调用dataTaskWithRequest:，不需要hook
-//    [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithURL:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithURL:"];
-    //内部调用dataTaskWithRequest:completionHandler:，不需要hook
-//    [NMHooker hookInstance:@"NSURLSession" sel:@"dataTaskWithURL:completionHandler:" withClass:@"NSURLSession" andSel:@"hook_dataTaskWithURL:completionHandler:"];
     
     //下载
     [NMHooker hookInstance:@"NSURLSession" sel:@"downloadTaskWithRequest:" withClass:@"NSURLSession" andSel:@"hook_downloadTaskWithRequest:"];
@@ -145,9 +143,73 @@ typedef void(^UploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * 
     return [self hook_dataTaskWithRequest:request];
 }
 
-//- (NSURLSessionDataTask *)hook_dataTaskWithURL:(NSURL *)url {
-//    return [self hook_dataTaskWithURL:url];
-//}
+- (NSURLSessionDataTask *)hook_dataTaskWithURL:(NSURL *)url {
+    if (!url) {
+        EELog(@"url为空");
+        return nil;
+    }
+    EELog(@"-------->start<--------");
+    if ([NMUtil isNetworkMonitorOn]) {
+        //设置traceId，如果成功生成traceId，说明不在白名单中；
+        //如果生成traceId为空，则说明在白名单中
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        NSString *traceId = [[self class] isInWhiteLists:request];
+        if (!traceId) {
+            EELog(@"-------->over<--------");
+            return [self hook_dataTaskWithURL:url];
+        }
+        //请求相关监控
+        NSMutableURLRequest *rq = [NMUtil mutableRequest:request];
+        [rq setValue:traceId forHTTPHeaderField:HEAD_KEY_EETRACEID];
+        [[self class] survayRequest:rq traceId:traceId];
+        EELog(@"-------->over<--------");
+        return [self hook_dataTaskWithRequest:rq];
+    }
+    EELog(@"-------->over<--------");
+    return [self hook_dataTaskWithURL:url];
+}
+
+- (NSURLSessionDataTask *)hook_dataTaskWithURL:(NSURL *)url completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler {
+    if (!url) {
+        EELog(@"url为空");
+        return nil;
+    }
+    EELog(@"-------->start<--------");
+    if ([NMUtil isNetworkMonitorOn]) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        //设置traceId，如果成功生成traceId，说明不在白名单中；
+        //如果生成traceId为空，则说明在白名单中
+        NSString *traceId = [[self class] isInWhiteLists:request];
+        if (!traceId) {
+            EELog(@"-------->over<--------");
+            return [self hook_dataTaskWithURL:url completionHandler:completionHandler];
+        }
+        //请求相关监控
+        NSMutableURLRequest *rq = [NMUtil mutableRequest:request];
+        [rq setValue:traceId forHTTPHeaderField:HEAD_KEY_EETRACEID];
+        [[self class] survayRequest:rq traceId:traceId];
+        if (completionHandler) {
+            CompletionHandler hook_completionHandler = ^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+                //把traceId设置到响应头
+                NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                httpResponse.traceId = traceId;
+                EELog(@"-------->over<--------");
+                completionHandler(data, httpResponse, error);
+                //响应监控
+                [[self class] survayResponse:httpResponse traceId:traceId  requestUrl:request.URL.absoluteString data:data loaction:nil error:error];
+                if (![NMUtil isInterferenceMode]) {
+                    [[NMCache sharedNMCache] persistData:traceId];
+                }
+            };
+            EELog(@"-------->over<--------");
+            return [self hook_dataTaskWithRequest:rq completionHandler:hook_completionHandler];
+        }
+        EELog(@"-------->over<--------");
+        return [self hook_dataTaskWithRequest:rq completionHandler:completionHandler];
+    }
+    EELog(@"-------->over<--------");
+    return [self hook_dataTaskWithURL:url completionHandler:completionHandler];
+}
 
 - (NSURLSessionDataTask *)hook_dataTaskWithRequest:(NSURLRequest *)request completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler {
     EELog(@"-------->start<--------");
@@ -186,10 +248,6 @@ typedef void(^UploadCompletionHandler)(NSData * _Nullable data, NSURLResponse * 
     EELog(@"-------->over<--------");
     return [self hook_dataTaskWithRequest:request completionHandler:completionHandler];
 }
-
-//- (NSURLSessionDataTask *)hook_dataTaskWithURL:(NSURL *)url completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler {
-//    return [self hook_dataTaskWithURL:url completionHandler:completionHandler];
-//}
 
 //下载
 - (NSURLSessionDownloadTask *)hook_downloadTaskWithRequest:(NSURLRequest *)request {
