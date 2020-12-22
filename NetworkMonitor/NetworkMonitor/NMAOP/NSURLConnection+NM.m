@@ -106,8 +106,12 @@ typedef void (^CompletionHandler)(NSURLResponse* _Nullable response, NSData* _Nu
         //发起请求
         NSData *data = [[self class] hook_sendSynchronousRequest:rq returningResponse:response error:error];
         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)(*response);
+        NSError *errorObjc;
+        if (error) {
+            errorObjc = *error;
+        }
         //响应相关监控
-        [[self class] survayResponse:httpResponse traceId:traceId requestUrl:request.URL.absoluteString data:data error:*error];
+        [[self class] survayResponse:httpResponse traceId:traceId requestUrl:request.URL.absoluteString data:data error:errorObjc];
         httpResponse.traceId = traceId;
         *response = httpResponse;
         
